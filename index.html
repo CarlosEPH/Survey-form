@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    
+    <!-- CONTAINER -->
+    <div id="container">
+
+        <!-- HEADER -->
+        <header id="header">
+            <h1 id="title">Music Production Academy</h1>
+            <p id="description">Where you will learn from music theory to mastering!</p>
+        </header>
+
+        <!-- FORM -->
+        <form action="" id="survey-form">
+            
+            <label for="name" id="name-label" class="label-title">Name</label>
+            <input type="text" required id="name" name="user_name" placeholder="Enter your name" class="input"><br>
+
+            <label for="email" id="email-label" class="label-title">Email</label>
+            <input type="email" required name="user_email" placeholder="example@email.com" id="email" class="input"><br>
+
+            <label for="number" id="number-label" class="label-title">Age (optional)</label>
+            <input type="number" min="10" max="110" name="user_age" id="number" class="input" placeholder="30"><br>
+
+            <label for="dropdown" class="label-title">What is your goal with music production?</label>
+            <select name="select-group" id="dropdown" class="select-option">
+                <option disabled selected value>Select current option</option>
+                <option value="1">Live from music monetarily</option> 
+                <option value="2">Being a music producer, but only as a hobby</option> 
+                <option value="3">I am already a producer, but I want to professionalize myself</option>
+            </select><br>
+
+            <label class="label-title">Select your gender </label>
+            <label class="label">
+                <input type="radio" name="radio-option" value="male" class="input-radio">
+                Male
+            </label>
+            <label class="label">
+                <input type="radio" name="radio-option" value="female" class="input-radio">
+                Female
+            </label>
+            <label class="label">
+                <input type="radio" name="radio-option" value="other" class="input-radio">
+                Other
+            </label>
+
+            <label class="label-instruments">Select your instruments</label>
+            <label class="select-option"><input type="checkbox" name="instrument-prefer" value="guitar">Guitar</label>
+            <label class="select-option"><input type="checkbox" name="instrument-prefer" value="guitar">Piano</label>
+            <label class="select-option"><input type="checkbox" name="instrument-prefer"value="guitar">Bass</label>
+            <label class="select-option"><input type="checkbox" name="instrument-prefer" value="guitar">Batery</label>
+            <label class="select-option"><input type="checkbox" name="instrument-prefer" value="guitar">Ukelele</label><br>
+
+            <label class="label-title">Any comments or suggestions?</label>
+            <textarea name="" id="texarea-comments" cols="30" rows="5" placeholder="Enter your comment here..."></textarea><br>
+
+            <div id="submit-div">
+                <button id="submit">Submit</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
